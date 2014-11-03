@@ -12,6 +12,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring.data.mongodb.version>1.6.0.RELEASE</spring.data.mongodb.version>
+		<mongodb.java.driver.version>2.12.4</mongodb.java.driver.version>
 	</properties>
 
 	<dependencies>
@@ -21,11 +23,19 @@
 			<version>4.1</version>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- <dependency> -->
+		<!-- <groupId>org.mongodb</groupId> -->
+		<!-- <artifactId>mongo-java-driver</artifactId> -->
+		<!-- <version>${mongodb.java.driver.version}</version> -->
+		<!-- </dependency> -->
+
 		<dependency>
-			<groupId>org.mongodb</groupId>
-			<artifactId>mongo-java-driver</artifactId>
-			<version>2.12.4</version>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-mongodb</artifactId>
+			<version>${spring.data.mongodb.version}</version>
 		</dependency>
+
 
 	</dependencies>
 	<build>
